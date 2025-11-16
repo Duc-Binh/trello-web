@@ -19,7 +19,15 @@ module.exports = {
     "react/prop-types": 0,
     "react/display-name": 0,
 
-    // Non-stylistic core rules
+    // MUI
+    "no-restricted-imports": [
+      "error",
+      {
+        patterns: [{ regex: "^@mui/[^/]+$" }],
+      },
+    ],
+
+    // Common
     "no-console": 1,
     "no-lonely-if": 1,
     "no-unused-vars": 1,
