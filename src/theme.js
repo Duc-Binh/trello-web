@@ -1,4 +1,3 @@
-
 // import { createTheme, useColorScheme } from "@mui/material/styles";
 import { experimental_extendTheme as extendTheme } from "@mui/material/styles";
 // import { red } from "@mui/material/colors";
@@ -28,55 +27,5 @@ const theme = extendTheme({
     },
   },
 });
-
-// const theme = extendTheme({
-//   colorSchemes: {
-//     light: {
-//       palette: {
-//         primary: {
-//           main: teal[500],
-//         },
-//         secondary: {
-//           main: deepOrange[500],
-//         },
-//       },
-//     },
-//     dark: {
-//       palette: {
-//         primary: {
-//           main: cyan[500],
-//         },
-//         secondary: {
-//           main: orange[500],
-//         },
-//       },
-//     },
-//   },
-// });
-
-
-import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
-
-// Create a theme instance.
-const theme = createTheme({
-  cssVariables: true,
-  palette: {
-    mode: "light",
-    primary: {
-      main: "#556cd6",
-    },
-    secondary: {
-      main: "#19857b",
-    },
-    error: {
-      main: red.A400,
-    },
-    text: {
-      secondary: red,
-    },
-  },
-});
-
 
 export default theme;
